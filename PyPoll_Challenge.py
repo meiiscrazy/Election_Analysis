@@ -43,7 +43,7 @@ with open(file_to_load) as election_data:
         # Get the candidate name from each row
         candidate_name = row[2]
 
-        # Extract th county name from each row
+        # Extract the county name from each row
         county_name = row[1]
 
         # If the candidate does not match any existing candidate add it into the list
@@ -55,7 +55,7 @@ with open(file_to_load) as election_data:
         # Add a vote to that candidate's count
         candidate_votes[candidate_name] += 1
 
-        # Challenge county
+        # Challenge county names and votes
         if county_name not in county_names:
             # Challenge add county name to the list
             county_names.append(county_name)
